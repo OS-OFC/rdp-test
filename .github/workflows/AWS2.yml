@@ -19,6 +19,8 @@ jobs:
 
     - name: Connecting ngrok Account
       run: .\ngrok\ngrok.exe authtoken 2EEY2tld2pmToM2ocP8td6evvJ7_22zG5iYXoyb3XwMevbH9W
+      env:
+        NGROK_AUTH_TOKEN: 2EEY2tld2pmToM2ocP8td6evvJ7_22zG5iYXoyb3XwMevbH9W
 
     - name: Enable RDP Access
       run: |
